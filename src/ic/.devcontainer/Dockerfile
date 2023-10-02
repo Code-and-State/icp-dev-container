@@ -16,6 +16,4 @@ RUN curl --fail -sSf https://raw.githubusercontent.com/creationix/nvm/${NVM_VERS
 
 # Install dfx
 RUN sh -ci "$(curl -fsSL https://smartcontracts.org/install.sh)"
-
-# Start dfx
-RUN dfx start --clean
+RUN mkdir -p ~/.config/dfx

@@ -24,5 +24,5 @@ RUN curl --fail -sSf https://raw.githubusercontent.com/creationix/nvm/v0.39.1/in
 # Remove hostname from prompt
 RUN sed -i "s|@\\\h||g" ~/.bashrc
 
-# Install dfx
+# Install latest available version of dfx
 RUN sh -ci "$(curl -fsSL https://smartcontracts.org/install.sh)"

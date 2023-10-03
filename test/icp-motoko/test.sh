@@ -4,7 +4,7 @@ source test-utils.sh
 
 # Template specific tests
 check "distro" lsb_release -c
-check "icp-motoko" [ $(cat /tmp/color.txt | grep red) ]
+check "dfx command existence" command -v dfx
 
 # Report result
 reportResults

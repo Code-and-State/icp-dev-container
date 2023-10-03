@@ -21,8 +21,5 @@ RUN curl --fail -sSf https://raw.githubusercontent.com/creationix/nvm/v0.39.1/in
     nvm use v18.1.0 && \
     nvm alias default v18.1.0
 
-# Remove hostname from prompt
-RUN sed -i "s|@\\\h||g" ~/.bashrc
-
 # Install latest available version of dfx
 RUN sh -ci "$(curl -fsSL https://smartcontracts.org/install.sh)"
